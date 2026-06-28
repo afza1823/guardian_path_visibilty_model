@@ -1,4 +1,4 @@
-# 🛡️ GuardianPath — Time-Aware Safe Pedestrian Route Navigation
+#  GuardianPath — Time-Aware Safe Pedestrian Route Navigation
 
 > *A machine-learning framework that turns Jane Jacobs' natural surveillance theory into a practical, explainable routing system — built entirely on free OpenStreetMap data.*
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📌 What Is This?
+##  What Is This?
 
 Every mainstream navigation app optimises for distance or speed — none of them care whether the route *feels safe to walk*. A street bustling with shops at noon can be deserted at midnight, yet Google Maps will send you down it either way.
 
@@ -29,7 +29,7 @@ Every mainstream navigation app optimises for distance or speed — none of them
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -73,7 +73,7 @@ Every mainstream navigation app optimises for distance or speed — none of them
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Time-Aware Scoring** — Safety scores change with the hour; the system differentiates between a bustling 10 AM street and a deserted midnight corridor
 - **Five Interpretable Safety Features** — Guardian proximity, active-hour flag, active POI density, anchor presence, night penalty
@@ -126,7 +126,7 @@ safepath_export/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -174,7 +174,7 @@ This generates 12,000 labelled samples (500 nodes × 24 hours), trains the XGBoo
 
 ---
 
-## 🧪 How It Works
+##  How It Works
 
 ### The Five Safety Features
 
@@ -206,7 +206,7 @@ Where `b` blends a heuristic danger score with the XGBoost prediction. A well-li
 
 ---
 
-## 📊 Experimental Results
+##  Experimental Results
 
 Tested on the Bengaluru urban road network (12.95°N–13.01°N, 77.56°E–77.65°E).
 
@@ -229,7 +229,7 @@ Tested on the Bengaluru urban road network (12.95°N–13.01°N, 77.56°E–77.6
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -245,18 +245,18 @@ Tested on the Bengaluru urban road network (12.95°N–13.01°N, 77.56°E–77.6
 
 ---
 
-## 📝 Research Papers
+##  Research Papers
 
 This project has been submitted to two peer-reviewed journals:
 
 1. **IEEE Open Journal of Intelligent Transportation Systems** — `research_paper/IEEE_Submissions/`
-2. **MDPI Smart Cities** — `research_paper/MDPI_Submissions/`
 
-Both papers follow the same conversational scholarly tone with full mathematical formulations, experimental validation, and SHAP analysis.
+
+
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 1. **Cumulative scoring bias** — Dijkstra favours routes with dense POI clusters near endpoints over evenly-distributed surveillance. A min-link formulation would be better.
 2. **Bengaluru-only** — The road graph and model are trained for Bengaluru; other cities require re-downloading and retraining.
@@ -265,16 +265,16 @@ Both papers follow the same conversational scholarly tone with full mathematical
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
-- 📱 Mobile app with GPS turn-by-turn navigation
-- 🔄 Bayesian fusion of rule-derived scores with real crime/incident data
-- 🌧️ Weather penalty (rain suppresses foot traffic like nightfall)
-- 🌍 On-demand graph loading for any city via bounding box
+-  Mobile app with GPS turn-by-turn navigation
+-  Bayesian fusion of rule-derived scores with real crime/incident data
+-  Weather penalty (rain suppresses foot traffic like nightfall)
+-  On-demand graph loading for any city via bounding box
 
 ---
 
-## 👤 Authors
+##  Authors
 
 - **Afza Ruheen** — Developer & Researcher | [ORCID: 0009-0007-2177-1671](https://orcid.org/0009-0007-2177-1671) | m24cs01@mccblr.edu.in
 - **Shaila Mary J.** — Project Mentor | Department of Computer Science, Mount Carmel College, Bengaluru
